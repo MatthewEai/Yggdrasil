@@ -1,6 +1,7 @@
 # Note that this script can accept some limited command-line arguments, run
 # `julia build_tarballs.jl --help` to see a usage message.
 using BinaryBuilder, Pkg
+# run(` export BINARYBUILDER_AUTOMATIC_APPLE=true`)
 
 name = "CvxCompress"
 version = v"1.1.0"
@@ -9,7 +10,8 @@ version = v"1.1.0"
 sources = [
     GitSource(
         "https://github.com/ChevronETC/CvxCompress.git",
-        "04dc59a4fab76ac612580ac69a9266e15db4fe17"
+        # "04dc59a4fab76ac612580ac69a9266e15db4fe17"
+        "0c51bb258aef802451737b1c8441bb461c9e0e18"
     ),
     DirectorySource("./bundled"),
 ]
